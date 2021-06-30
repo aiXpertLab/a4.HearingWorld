@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shape_dialog"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/selfdg_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="18dip"
+            android:text="眼镜连接失败"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/selfdg_mesg"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="26dp"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:layout_marginTop="18dip"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:text="请检查连接设备电源是否打开"-->
+<!--            android:textSize="14sp" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/shap_gray_bottom">
+            <ImageView
+                android:id="@+id/dialog_scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/btn_scan"/>
+
+            <EditText
+                android:id="@+id/dialog_Et"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toLeftOf="@id/dialog_scan"
+                android:background="@null"
+                android:hint="输入眼镜唯一标识"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="210dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="23dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/selfdg_yes"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/shape_bottom"
+                android:text="绑定眼镜"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

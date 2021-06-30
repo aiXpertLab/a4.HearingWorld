@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+    <ImageView
+        android:id="@+id/glasses_icon_iv"
+        android:layout_width="79dp"
+        android:layout_height="53dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/glasses_list_icon"/>
+<LinearLayout
+    android:id="@+id/container_text_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/glasses_icon_iv"
+    android:layout_marginLeft="10dp"
+    android:layout_centerVertical="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/device_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Bluetooth Device"
+        android:textSize="16sp"
+        android:textColor="?android:textColorPrimary"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/device_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="FF:FF:FF:FF:FF:FF"
+        android:textSize="14sp"
+        android:textColor="?android:textColorSecondary"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="10dp"/>
+
+</LinearLayout>
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1px"-->
+<!--        android:layout_marginLeft="52dp"-->
+<!--        android:layout_below="@id/container_text_ll"-->
+<!--        android:background="@color/gray_light"/>-->
+</RelativeLayout>
