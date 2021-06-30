@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/img_hear_age_index1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="string/hear_age_test_introduction"
+            app:layout_constraintTop_toBottomOf="@id/img"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="8dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--    <seeingvoice.jskj.com.seeingvoice.ui.MyImageTextViewNew-->
+<!--        xmlns:imageText="http://schemas.android.com/apk/res-auto"-->
+<!--        android:id="@+id/img"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_below="@+id/bluetooth_conn_mng"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        imageText:image="@mipmap/img_hear_age_index1"-->
+<!--        imageText:layout_constraintTop_toTopOf="parent"-->
+<!--        imageText:text="@string/hear_age_test_introduction"-->
+<!--        imageText:textColor="@color/mainText"-->
+<!--        android:textAlignment="textStart"-->
+<!--        android:padding="8dp"-->
+<!--        imageText:flow_horizontalAlign="start"/>-->
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout1" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/shape_btn"
+        android:text="开始测试"
+        android:textSize="20sp"
+        android:textColor="@drawable/btn_color_selector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result" />
+
+    <TextView
+        android:id="@+id/tv_result1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:text="点我了解更多"
+        android:textColor="@color/yellow_value"
+        android:textSize="@dimen/sp14"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@id/button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <!--<TextView-->
+    <!--android:id="@+id/tv_result1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:maxLines="6"-->
+    <!--android:ellipsize="end"-->
+    <!--android:textColor="@color/yellow_value"-->
+    <!--android:textSize="18sp"-->
+    <!--android:text="@string/hear_age_test_introduction1"-->
+    <!--android:visibility="gone"/>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

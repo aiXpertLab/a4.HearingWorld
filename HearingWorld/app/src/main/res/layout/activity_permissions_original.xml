@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/icon_bat_logo"
+        android:contentDescription="dddd" />
+
+    <TextView
+        android:layout_below="@+id/img_logo"
+        android:id="@+id/hint"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="开启以下全部权限，才能正常运行哦~"
+        android:textColor="@color/login_blue"
+        android:textSize="20sp" />
+    <LinearLayout
+        android:layout_below="@+id/hint"
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="fill_vertical">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/ic_green_duigou"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="fill_vertical"
+                android:text="录制音频权限,用于检测环境噪音，听力测试，实时助听功能；" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="fill_vertical">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/ic_green_duigou"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="fill_vertical"
+                android:text="访问照片、媒体内容和文件权限，用于设置头像访问照片等；" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_below="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="您也可以在系统中关闭授权，这可能会影响部分功能的正常使用。"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请您在使用见声听力测试APP前仔细阅读并同意："/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_privacy_policy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="《见声听力测试隐私政策》"
+                android:textColor="@color/bg_lightblue"/>
+            <TextView
+                android:id="@+id/tv_user_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="《见声听力测试用户协议》"
+                android:textColor="@color/bg_lightblue"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/layout2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="153dp"
+        android:layout_marginBottom="60dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="6dp">
+
+        <Button
+            android:id="@+id/btn_unaccept"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape_btn"
+            android:text="不同意"
+            android:textColor="@drawable/btn_color_selector" />
+
+        <Button
+            android:id="@+id/btn_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape_btn"
+            android:text="同意"
+            android:textColor="@drawable/btn_color_selector" />
+    </LinearLayout>
+</RelativeLayout>

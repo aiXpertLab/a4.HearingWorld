@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <gradient android:startColor="@color/red" android:endColor="@color/textColorPrimary" /><!--内容实现渐变-->
+            <corners android:radius="10dp" /><!--圆弧半径--> />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <gradient android:startColor="@color/login_blue" android:endColor="@color/black" /><!--内容实现渐变-->
+            <corners android:radius="10dp" /><!--圆弧半径--> />
+        </shape>
+    </item>
+</selector>

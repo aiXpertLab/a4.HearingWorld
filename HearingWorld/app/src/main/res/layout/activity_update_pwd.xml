@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/email_login_form"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置密码最少8位字母数字字符组成。"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleDrawable="@drawable/design_password_eye"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/ed_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="密码"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:passwordToggleDrawable="@drawable/design_password_eye"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/ed_repeat_password"
+            android:imeActionId="666"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="确认密码"
+            android:imeActionLabel="注册动作"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/pwd_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"/>
+
+    <Button
+        android:id="@+id/btn_comfirm"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="确定"
+        android:textStyle="bold"
+        android:textColor="@drawable/btn_color_selector"
+        android:background="@drawable/shape_conner"/>
+</LinearLayout>

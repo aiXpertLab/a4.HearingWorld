@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- The main content view -->
+    <!-- 一般宽高都是 match_parent 且不用设置 layout_gravity 属性 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- 用于替换 ActionBar，如果不需要可以直接删除 -->
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/main_title_bar" />
+        <!-- 一般 DrawerLayout 是与 Fragment 结合使用的，当点击抽屉菜单中的 item 时，使用 FragmentManager 来实现切换，实现内容页的改变 -->
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <!-- The navigation drawer -->
+    <!-- layout_width 一般小于 320dp -->
+    <!-- 通过设置 layout_gravity 对抽屉菜单进行定位 -->
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <!-- 实现自定义布局，不一定要是 ListView -->
+    </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:layout_width="240dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:background="@color/white"-->
+        <!--android:orientation="vertical">-->
+        <!--&lt;!&ndash; 实现自定义布局，不一定要是 ListView &ndash;&gt;-->
+    <!--</LinearLayout>-->
+</androidx.appcompat.widget.DrawerLayout>

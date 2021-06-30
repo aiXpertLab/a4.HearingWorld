@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app   ="http://schemas.android.com/apk/res-auto"
+    android:id  ="@+id/drawer_layout"
+    android:layout_width    ="match_parent"
+    android:layout_height   ="match_parent">
+    <!-- The main content view, when Drawer is not opened. Must be the first line -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width    ="0dp"
+        android:layout_height   ="0dp">
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/main_title_bar"
+            app:layout_constraintHeight_percent="0.1"/>
+
+        <seeingvoice.jskj.com.seeingvoice.ui.MyImageTextViewNew
+            android:id="@+id/ImageView_pure_test"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="76dp"
+            android:padding="@dimen/dp15"
+            app:image="@drawable/ic_index_btn_pure_selector"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:text="@string/pt_headphones"
+            app:textColor="@color/mainText" />
+
+        <LinearLayout
+            android:id="@+id/layout_btn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="44dp"
+            android:gravity="center|bottom"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.1"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ImageView_pure_test">
+
+            <Button
+                android:id="@+id/btn_start_pure_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/register_selector"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/pt_btn_start"
+                android:textColor="@color/colorPrimaryTextWhite"
+                android:textSize="@dimen/btn_text_size" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- The navigation drawer, layout_gravity="left" changed to "start" sv -->
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/btn_login_color"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/layout_me"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/btn_login_color"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:paddingStart="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="05dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/default_user_avatar"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_view_name"
+                        android:layout_margin="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:text="@string/company_mp"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_view_signature"
+                        android:layout_margin="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/company_name"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_item"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@color/colorPrimary"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:listSelector="@color/btn_login_color" />
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

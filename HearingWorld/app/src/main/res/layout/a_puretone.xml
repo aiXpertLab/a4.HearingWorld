@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".l_audiometry.puretest.L_PureToneTest">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/t4_notice"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <io.victoralbertos.breadcumbs_view.BreadcrumbsView
+        android:id="@+id/left_breadcrumbs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:heightSeparator="@dimen/height_separator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03"
+        app:nextStepBorderDotColor="@color/colorNext"
+        app:nextStepFillDotColor="@color/colorNext"
+        app:nextStepSeparatorColor="@color/colorNext"
+        app:numberOfSteps="8"
+        app:radiusDot="@dimen/radius_dot"
+        app:sizeDotBorder="@dimen/size_dot_border"
+        app:visitedStepBorderDotColor="@color/colorPrimary"
+        app:visitedStepFillDotColor="@color/colorPrimary"
+        app:visitedStepSeparatorColor="@color/colorPrimary" />
+
+    <io.victoralbertos.breadcumbs_view.BreadcrumbsView
+        android:id="@+id/right_breadcrumbs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:visibility="invisible"
+        app:heightSeparator="@dimen/height_separator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03"
+        app:nextStepBorderDotColor="@color/colorNext"
+        app:nextStepFillDotColor="@color/colorNext"
+        app:nextStepSeparatorColor="@color/colorNext"
+        app:numberOfSteps="8"
+        app:radiusDot="@dimen/radius_dot"
+        app:sizeDotBorder="@dimen/size_dot_border"
+        app:visitedStepBorderDotColor="@color/colorPrimary"
+        app:visitedStepFillDotColor="@color/colorPrimary"
+        app:visitedStepSeparatorColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/tv_finish_num_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/t4_progressing_left0"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/tv_finish_num_right"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/left_breadcrumbs" />
+
+    <TextView
+        android:id="@+id/tv_finish_num_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/t4_progressing_right0"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_finish_num_left"
+        app:layout_constraintTop_toTopOf="@+id/tv_finish_num_left" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar_h"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:layout_gravity="center"
+        android:max="30"
+        android:progress="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/L_R_choose"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22">
+
+        <RadioButton
+            android:id="@+id/rd_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/left_radio_check"
+            android:button="@null"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/global_left"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/btn_login_color"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rd_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/right_radio_check"
+            android:button="@null"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/global_right"
+            android:textAlignment="center"
+            android:textColor="@color/btn_login_color"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/tv_count_down"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/t4_timing"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progress_bar_h" />
+
+    <Button
+        android:id="@+id/btn_check_out_pure_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/register_selector"
+        android:padding="8dp"
+        android:text="@string/t4_result"
+        android:textColor="@color/colorPrimaryTextWhite"
+        android:textSize="@dimen/btn_text_size"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_canHear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/register_selector"
+        android:text="@string/t4_canhear"
+        android:textColor="@color/colorPrimaryTextWhite"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/btn_nocanHear"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_count_down" />
+
+    <Button
+        android:id="@+id/btn_nocanHear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/register_selector"
+        android:text="@string/t4_nothearing"
+        android:textColor="@color/colorPrimaryTextWhite"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_canHear"
+        app:layout_constraintTop_toTopOf="@+id/btn_canHear" />
+
+    <Button
+        android:id="@+id/btn_start_pause"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/playing_btn_selector"
+        android:text="@string/t4_start"
+        android:textColor="@color/colorPrimaryTextWhite"
+        android:textColorLink="@color/colorPrimaryTextWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_count_down"
+        app:layout_constraintWidth_percent="0.2" />
+
+
+    <TextView
+        android:id="@+id/tv_tone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/t4_tone"
+        app:layout_constraintBottom_toTopOf="@+id/progress_bar_h"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_tone_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text="@string/t4_1000hz"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_tone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_tone"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/t4_volume"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progress_bar_h" />
+
+    <TextView
+        android:id="@+id/tv_volume_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text="@string/t4_10db"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_volume"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_volume"
+        app:layout_constraintVertical_bias="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

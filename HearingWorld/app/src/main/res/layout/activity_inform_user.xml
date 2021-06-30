@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".l_audiometry.puretest.InformUserL">
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/shape_float_window"
+            android:drawableLeft="@mipmap/ic_attention"
+            android:padding="10dp"
+            android:textSize="22sp"
+            android:text="注意：本应用测试结果具有一定的监测和筛查能力，但是无法取代权威专业医院或者机构诊断依据。因致聋原因的复杂性，如近期您听力下降请及时就医，以免耽误病情。(详情请参考登陆页面中的免责声明)"
+            tools:layout_editor_absoluteX="138dp"
+            tools:layout_editor_absoluteY="246dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/btn_circle_corner_selector"
+        android:textColor="@drawable/btn_color_selector"
+        android:textSize="@dimen/btn_text_size"
+        android:padding="5dp"
+        android:text="继续"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/content" />
+</androidx.constraintlayout.widget.ConstraintLayout>

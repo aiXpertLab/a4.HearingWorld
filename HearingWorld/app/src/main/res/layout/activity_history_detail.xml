@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--<LinearLayout-->
+        <!--android:id="@+id/result"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical">-->
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/yellow_value">-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="听力测试结果"-->
+                <!--android:padding="5dp"-->
+                <!--android:textSize="30sp" />-->
+            <!--<TextView-->
+                <!--android:id="@+id/add_remark"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="添加备注"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:padding="5dp"-->
+                <!--android:textSize="26sp"-->
+                <!--android:textColor="@color/light_blue"/>-->
+        <!--</RelativeLayout>-->
+        <!--<TextView-->
+            <!--android:id="@+id/tv_pure_left"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="20sp"-->
+            <!--android:text="左耳数据"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/tv_pure_right"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="20sp"-->
+            <!--android:text="右耳数据"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/tv_remark"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@color/red"-->
+            <!--android:textSize="20sp"/>-->
+    <!--</LinearLayout>-->
+    <include layout="@layout/a_chart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/result"/>
+
+    <!--<include-->
+        <!--android:id="@+id/result_line_chart"-->
+        <!--layout="@layout/chart"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/result" />-->
+</RelativeLayout>

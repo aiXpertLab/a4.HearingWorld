@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="chart_key_interpretion">
+        <item>良好。</item>
+        <item>轻度损伤。对汉语交流影响可控。</item>
+        <item>中度损伤。听不见的情形有所增加。</item>
+        <item>中重度损伤。公众场合听音困难。</item>
+        <item>重度损伤。不佩戴助听器已经很难交流。</item>
+        <item>极重度损伤。需要想办法保护语言能力。</item>
+    </string-array>
+    <string-array name="chart_high_frequency_interpretion">
+        <item>良好。养成定时检测听力的好习惯。</item>,
+        <item>轻度损伤。与人沟通需要集中注意力。</item>
+        <item>中度损伤，辅音分辨困难，“听不清”增多。在理解和交流等活动上受限。</item>
+        <item>中重度损伤。语音分辨能力下降明显。在参与社会生活方面存在障碍。</item>
+        <item>重度损伤。分辨辅音困难，理解能力下降。</item>
+        <item>极重度损伤。更重要的是想办法保护语言能力。</item>
+    </string-array>
+    <string-array name="chart_overall_interpretion">
+        <item>正常。请养成定期做听力检测的好习惯。</item>
+        <item>轻度听力损失。本人没有或仅感觉到轻微听力下降，一般不太影响正常的生活。需要密切关注，每个月做一次听测。</item>
+        <item>中度听力损失，四级听力残疾。本人感觉到听力下降，言语交流时，需对方重复、减慢语速或稍微提高声音才能听清楚。</item>
+        <item>中重度听力损失，三级听力残疾。听力下降明显。助听器对听见声音有用，对交流作用已经不太大。</item>
+        <item>重度听力损失，二级听力残疾。需对方大声喊，并借助看对方口形才能大致明白说话者的意思。助听器对听见声音有用，对交流意义已经不大。考虑采用其他沟通方式。</item>
+        <item>极重度听力损失，一级听力残疾。需要想办法保护语言能力。</item>
+    </string-array>
+    <string-array name="sliding_menu">
+        <item>噪音检测</item>
+        <item>好友分享</item>
+        <item>帮助与反馈</item>
+        <item>账号与安全</item>
+        <item>关于我们</item>
+        <item>退出</item>
+    </string-array>
+
+
+    <string-array name="slide_titles">
+        <item>准</item>
+        <item>快</item>
+        <item>专业</item>
+        <item>方便</item>
+    </string-array>
+
+    <string-array name="slide_descriptions">
+        <item>美国听力协会标准音</item>
+        <item>2-5分钟</item>
+        <item>10年专注</item>
+        <item>耳机、手机、家中</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><!--oneshot: true只展示一次。
+             false不停的循环播放动画。
+    android:duration 图片显示时间长度。 -->
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item
+        android:drawable="@mipmap/hw1"
+        android:duration="5600"></item>
+    <item
+        android:drawable="@mipmap/hw2"
+        android:duration="5800"></item>
+    <item
+        android:drawable="@mipmap/hw3"
+        android:duration="6200"></item>
+    <item
+        android:drawable="@mipmap/hw4"
+        android:duration="6200"></item>
+    <item
+        android:drawable="@mipmap/hw5"
+        android:duration="6200"></item>
+    <item
+        android:drawable="@mipmap/hw6"
+        android:duration="6000"></item>
+</animation-list>

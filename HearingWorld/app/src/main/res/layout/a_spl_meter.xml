@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp"
+    android:orientation="vertical"
+    android:id="@+id/relativeLayout8">
+
+    <TextView
+        android:id="@+id/attention_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="@string/drawer_noise_notice"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <seeingvoice.jskj.com.seeingvoice.noisetest.noiseUI.NoiseboardView
+        android:id="@+id/noiseboardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bigSliceCount="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.417"
+        app:maxValue="150"
+        app:radius="110dp"
+        app:ribbonWidth="40dp"
+        app:scaleTextSize="10sp"
+        app:unitText="dB" />
+
+    <TextView
+        android:id="@+id/tv_noise_hint"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:gravity="center"
+        android:textColor="@color/transparentBlue"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noiseboardView"
+        app:layout_constraintVertical_bias="0.048"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/btn_start_hearing_test_meter"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/register_selector"
+        android:textColor="@drawable/btn_color_selector"
+        android:textSize="@dimen/btn_text_size"
+        app:layout_constraintBottom_toTopOf="@+id/noiseboardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
