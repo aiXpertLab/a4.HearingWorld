@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PlayingPanelView">
+        <attr name="hintText" format="string"/>
+        <attr name="playHintText" format="string"/>
+        <attr name="timeTextColor" format="reference"/>
+        <attr name="hintTextSize" format="dimension"/>
+        <attr name="middleLineHeight" format="dimension"/>
+        <attr name="progressSrc" format="reference"/>
+        <attr name="middleLineColor" format="reference"/>
+        <attr name="unit" format="string"/>
+        <attr name="model">
+            <enum name="record_model" value="1"/>
+            <enum name="play_model" value="2"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="NoiseboardView">
+        <attr name="radius" format="dimension"/>     <!--扇形半径-->
+        <attr name="bigSliceCount" format="integer"/> <!-- 长刻度条数-->
+        <attr name="sliceCountInOneBigSlice" format="integer"/> <!-- 每两条长刻度之间分条数-->
+        <attr name="scaleColor" format="color"/> <!--刻度颜色-->
+        <attr name="scaleTextSize" format="dimension"/> <!--刻度字体大小-->
+        <attr name="unitText" format="string"/> <!--单位-->
+        <attr name="unitTextSize" format="string"/> <!--单位字体大小-->
+        <attr name="minValue" format="integer"/> <!--最小值-->
+        <attr name="maxValue" format="integer"/> <!--最大值-->
+        <attr name="ribbonWidth" format="dimension"/> <!--色带宽度-->
+    </declare-styleable>
+
+    <declare-styleable name="CustomVolumeControlBar">
+        <attr name="firstColor" format="color"/>
+        <attr name="secondColor" format="color"/>
+        <attr name="circleWidth" format="dimension"/>
+        <attr name="dotCount" format="integer"/>
+        <attr name="splitSize" format="integer"/>
+        <attr name="bg" format="reference"/><!--注意格式-->
+    </declare-styleable>
+
+    <declare-styleable name="MyBatteryView">
+        <attr name="batteryTextSize" format="dimension"/>
+        <attr name="batteryColor" format="reference"/>
+        <attr name="powerColor" format="reference"/>
+        <attr name="lowPowerColor" format="reference"/>
+        <attr name="showText" format="boolean"/>
+        <attr name="isLeft" format="boolean"/>
+        <attr name="mCapWidth" format="dimension"/>
+    </declare-styleable>
+
+    <!--<declare-styleable name="MyBatteryView">-->
+        <!--<attr name="MyBatteryView_batteryTextSize" format="dimension"/>-->
+        <!--<attr name="MyBatteryView_batteryColor" format="color"/>-->
+        <!--<attr name="MyBatteryView_powerColor" format="color"/>-->
+        <!--<attr name="MyBatteryView_lowPowerColor" format="color"/>-->
+        <!--<attr name="MyBatteryView_showText" format="boolean"/>-->
+        <!--<attr name="MyBatteryView_mCapWidth" format="dimension"/>-->
+    <!--</declare-styleable>-->
+
+</resources>

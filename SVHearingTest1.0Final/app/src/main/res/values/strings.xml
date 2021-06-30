@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">见声听见</string>
+    <string name="pure_test">纯音听力测试</string>
+    <string name="verbal_test">言语听力测试</string>
+    <string name="hear_age">听力年龄测试</string>
+    <string name="hear_asist">助听器</string>
+    <string name="start_to_test">开始测试</string>
+    <string name="open_drawer">打开</string>
+    <string name="close_drawer">关闭</string>
+    <string name="action_example">例子1</string>
+    <string name="action_settings">设置</string>
+    <string name="sv_earbuds_name">见声智能双耳耳机</string>
+    <string name="sv_earbuds_ads">智能无线、高保真、智能助听补偿</string>
+    <string name="buy_now">立即购买</string>
+    <string name="next">下一步</string>
+    <string name="notifyTitle">提示</string>
+    <string name="notifyMsg">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。</string>
+    <string name="gpsNotifyMsg">当前应用需要打开定位功能。\n\n请点击\"设置\"-\"定位服务\"-打开定位功能\"-方法（高精）。</string>
+    <string name="setting">设置</string>
+    <string name="cancel">取消</string>
+    <string name="btn_search">搜索</string>
+    <string name="help">权限缺失</string>
+    <string name="string_help_text">请开启相关权限，才能正常使用本APP。</string>
+    <string name="quit">退出</string>
+    <string name="settings">设置</string>
+    <!--<string name="verbelTest_brief">Welcome to this short,5 step Speech-in-noise Test.-->
+    <!--The test will help you determine if you will benefit from wearing Hearing Devices.-->
+    <!--Test how clearly you can hear in different levels of background noise.Make sure your headphones are closed tightly around your ears.</string>-->
+    <string name="verbelTest_brief">欢迎来到这个简短的5步言语测试。
+该测试将帮助您确定您是否将从佩戴听力设备中受益。
+测试您在不同级别的背景噪音中听清楚的程度。确保您的耳机紧贴耳朵。</string>
+    <string name="volume_adjust">上下滑动手指增减音量</string>
+    <!--<string name="start_practice">Have a test run to practice before the actual test starts</string>-->
+    <string name="start_practice">在实际测试开始之前进行测试运行。</string>
+    <!--<string name="start_test">Now you are ready to run the test. When the test is completed, it will go to step 5 and give you your result.</string>-->
+    <string name="start_test">现在您已准备好运行测试。测试完成后，将转到步骤5并提供结果。</string>
+    <string name="input_nums">输入您听到的数字</string>
+    <string name="disclaimer_title">免责声明</string>
+    <string name="disclaimer">\t\t\t\t言语测听是用言语信号作为刺激声来检查被测试者的言语听阈及言语识别能力，是听力测试的重要方法之一。言语测听结果可以反映被测试者日常生活中的言语交流能力，是评价障碍患者残疾程度、社会交往能力、治疗或康复效果的重要指标。
+本应用有关聋人言语测试的结果具有一定的参考价值，并不代表权威专业医院或者机构诊断依据。</string>
+    <string name="aid_auto_set">自动设置智能耳机</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hear_age_test_introduction">你有过这样的体验吗?在小时候听到很刺耳的声音,跟大人们讲,他们却好像完全听不见。究其原因是不同年龄段的人能听到声音频率范围存在着不同。通常情况下儿童的听力范围是成人的2.5倍，所以就能听到更高频的声音, 在这里准备了一个小测试,现在就来带上耳机测一测吧!
+    </string>
+    <string name="hear_age_test_introduction1">
+\t\t\t\t所以你能听到多少声音呢?如果你全都听到了， 那么恭喜你的耳朵很年轻，但如果20岁的你却早早就听不到了，那就得小心了。你的听力正在退化。我们的内耳当中有上千个微小的神经细胞叫做毛细胞,它负责接收各个频率的声音，然后将信息传递给大脑，我们便有了听觉。但不同于肝脏、皮肤等器官，我们的
+内耳没有再生能力，而在长时间的噪声和高音量干扰下，毛细胞会受到不可逆的扭曲和破坏。负责高频的毛细胞最先接触到声音，所以更容易老化脱落，因此年龄大的人自然就对高频的声音不敏感了，所以说听觉随着年龄退化是正常的，但如果年轻时不注意保养，过度用耳，它就会加速听觉的衰退。如果您有经常耳鸣的症状,那可能是耳朵发出的求救信号，听力已经受损。如果再不重视，甚至会导致突发性耳聋，短时间丧失平衡能力、永久性损伤听力，所以千万不要长时间戴耳机看剧，更不要在嘈杂的环境中长时间听歌。当然最最最重要的是音量不要太大声。此外良好的生活习惯也很重要， 天天蹦迪、过度
+过度烟酒、乱掏耳朵、滥用药物的都会损害耳朵。请记住从现在起，我们听力的最佳状态就是今天了, 所以为了未来还能愉快的玩耍，-定要好好保护自己的耳朵，别忘了毛细胞真得很辛苦的，要对他们好一点噢！
+    </string>
+    <string name="Left">左</string>
+    <string name="Right">右</string>
+    <string name="title_activity_tel_register">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string name="string_exit">"再按一次关闭程序！"</string>
+    <string name="tv_find_sv_earbuds">点我查找见声耳机</string>
+    <string name="btn_to_pure_test_index">听力测试检查听力损失程度\n先做个听力评估吧~</string>
+
+    <string name="notice_before_puretest">注意：本应用测试结果具有一定的监测和筛查能力，但是无法取代权威专业医院或者机构诊断依据。因致聋原因的复杂性，如近期您听力下降请及时就医，以免耽误病情。(详情请参考登录页面中的免责声明)</string>
+    <string name="finish_verify_volume">注意：手机音量已校准，测试中请不要调节手机一侧音量键！</string>
+    <string name="notice_noise">在安静的环境下，测试结果最准确。请找一个安静的角落，开始您的纯音测试吧！</string>
+    <string name="headphone_test">测试耳机</string>
+    <string name="notice_headphone_on">纯音测试需要连接耳机，有线和蓝牙耳机均可！连接完成后会出现测试耳机按钮！</string>
+    <string name="dialog_cancel_text">知道了</string>
+    <string name="left_ear_text">左耳</string>
+    <string name="right_ear_text">右耳</string>
+    <string name="choose_better_ear_test">*请选择先听力较佳耳开始；如双耳听力相当，请先从右耳开始。"</string>
+    <string name="username">手机号</string>
+    <string name="before_test_tips_str">"图书馆、办公室、卧室等通常安静的环境下，测试效果足够好；如有疑问，可以点开左上角先进行噪声测试，背景噪声45db以下就可以!"</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="root_title">音乐播放器设置</string>
+    <string name="all_volume_title">音量设置进度条</string>
+    <string name="tv_adjust_volume">音量调节</string>
+    <string name="left">左</string>
+    <string name="plus">+</string>
+    <string name="reduce">-</string>
+</resources>

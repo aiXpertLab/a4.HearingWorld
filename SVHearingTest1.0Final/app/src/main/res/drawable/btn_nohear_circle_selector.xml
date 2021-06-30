@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:drawable="@drawable/btn_circle_white">
+        <shape android:shape="oval"
+            android:innerRadius="100dp"
+            android:thickness="20dp"
+            android:useLevel="false">
+            <!-- 圆角红色按钮 -->
+            <solid android:color="@color/red"/>
+            <corners android:radius="10dip"/>
+        </shape>
+    </item>
+    <item android:state_enabled="false" android:drawable="@drawable/btn_circle_gray">
+        <shape android:shape="oval"
+            android:innerRadius="100dp"
+            android:thickness="20dp"
+            android:useLevel="false">
+            <!-- 圆角红色按钮 -->
+            <solid android:color="@color/green_value"/>
+            <corners android:radius="10dip"/>
+        </shape>
+    </item>
+</selector>

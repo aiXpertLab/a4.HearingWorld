@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp"
+    android:orientation="vertical">
+    <com.seeingvoice.www.svhearing.ui.AttentionView
+        android:id="@+id/attention_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentTop="true"/>
+    <LinearLayout
+        android:layout_below="@+id/attention_view"
+        android:id="@+id/image_loca"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:gravity="center">
+        <com.seeingvoice.www.svhearing.noisetest.noiseUI.NoiseboardView
+            android:id="@+id/noiseboardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bigSliceCount="10"
+            app:unitText="dB"
+            app:maxValue="150"
+            app:scaleTextSize="10sp"
+            app:radius="110dp"
+            app:ribbonWidth="40dp"/>
+
+        <TextView
+            android:id="@+id/tv_noise_hint"
+            android:layout_width="match_parent"
+            android:layout_height="48dip"
+            android:text="当前环境适合测试吗？"
+            android:textColor="@color/transparentBlue"
+            android:textSize="20sp"
+            android:gravity="center"/>
+        <!--<TextView-->
+            <!--android:id="@+id/tv_result_hint"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="48dip"-->
+            <!--android:text="测试结果显示"-->
+            <!--android:textSize="20sp"-->
+            <!--android:gravity="center"/>-->
+        <TextView
+            android:id="@+id/text_vip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lines="1"
+            android:textColor="#00733C"
+            android:textSize="@dimen/text_size"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:id="@+id/btn_start_hearing_test_meter"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/register_selector"
+            android:text="继 续"
+            android:textColor="@drawable/btn_color_selector"
+            android:textSize="@dimen/btn_text_size"/>
+    </LinearLayout>
+</RelativeLayout>

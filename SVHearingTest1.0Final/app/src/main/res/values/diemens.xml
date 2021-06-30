@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_huge">16dp</dimen>
+    <dimen name="item_left_tv_padding">15dp</dimen>
+    <dimen name="item_distance">10dp</dimen>
+
+    <!--进度条尺寸-->
+    <dimen name="radius_dot">5dp</dimen>
+    <dimen name="size_dot_border">1dp</dimen>
+    <dimen name="height_separator">1dp</dimen>
+</resources>

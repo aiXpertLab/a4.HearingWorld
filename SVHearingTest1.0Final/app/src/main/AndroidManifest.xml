@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.seeingvoice.www.svhearing">
+    <!-- Needed only if your app targets Android 5.0 (API level 21) or higher. -->
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+    <!-- true表示需要这项功能否则应用无法工作，如果为false表示应用在必要时会使用该功能，但是如果没有此功能应用也能工作-->
+    <!-- Android 5.0之前是android.hardware.bluetooth_le -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" /> <!-- android6.0以上使用蓝牙需要的权限，否则在Android6.0以上的手机扫描不到蓝牙设备 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 危险权限 录音 -->
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- 一般权限  修改音量 -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 以上权限第三方登录需要用到 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- SD卡读写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 修复应用更新后8.0以上无法安装问题 -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission
+        android:name="android.permission.WRITE_APN_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- 得到屏幕正常的物理尺寸 -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name=".heartests.openslmediaplayer.test.preferences.SettingsActivity"
+            android:label="@string/title_activity_settings"/>
+        <activity android:name=".heartests.openslmediaplayer.test.activities.musicPlayActivity" />
+        <activity android:name=".heartests.openslmediaplayer.TenEQsActivity" />
+
+        <service
+            android:name=".heartests.openslmediaplayer.MusicService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".blueTest.SVIIHeadsetActivity" />
+<!--        <activity android:name=".heartests.musicPlayer.SetupMusicHearAssistActivity" />-->
+<!--        <activity android:name=".heartests.musicPlayer.MusicListActivity" />-->
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".heartests.newpuretest.newPureTestActivity" />
+        <activity android:name=".personal_info_activity" />
+        <activity android:name=".heartests.puretest.BeforePureTestActivity" />
+        <activity android:name=".heartests.puretest.InformUserActivity" />
+        <activity android:name=".bondphone.WechatStartBondPhone" />
+        <activity android:name=".bondphone.WECHATbondPhoneActivity" />
+        <activity android:name=".heartests.noHeadsetAlertActivity" />
+        <activity android:name=".heartests.freePureTest.FreePureTestIndexActivity" />
+        <activity android:name=".heartests.puretest.PureTestCourse" />
+
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="360" />
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="640" /> <!-- networkSecurityConfig  Android 9.0网络权限适配 -->
+        <activity android:name=".permissions.PermissionsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".login.LoginActivity" />
+        <activity android:name=".login.TelRegisterUserInfo" />
+        <activity android:name=".login.TelRegisterActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTop" /> <!-- QQ第三方登录注册SDKActivity -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1108896176" /> <!-- 开放平台获取的APPID -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- android:screenOrientation="portrait" -->
+        <activity android:name=".TestsActivity" /> <!-- QQ第三方登录注册SDKActivity  ending -->
+        <activity android:name=".tests.ChooseHeadsetTypeActivity" />
+        <activity android:name=".tests.PrepareHeadsetActivity" />
+        <activity android:name=".bluetooth.StartPareEarbudsActivity" />
+        <activity android:name=".bluetooth.SearchSVEarbudsActivity" />
+        <activity android:name=".bluetooth.BeforePairedBluetooth" />
+        <activity android:name=".NoticeActivity" />
+        <activity android:name=".noisetest.SPLMeterActivity" />
+        <activity android:name=".heartests.puretest.whichTestFirst" />
+        <activity android:name=".heartests.puretest.HearingThreshold" />
+        <activity android:name=".heartests.puretest.ResultActivity" />
+        <activity android:name=".heartests.verbaltests.DisclaimerActivity" />
+        <activity android:name=".heartests.verbaltests.numKeyboard.NumKeyboardActivity" />
+        <activity android:name=".heartests.verbaltests.VerbalIndexActivity" />
+        <activity android:name=".heartests.verbaltests.VerbalTestResultActivity" />
+        <activity android:name=".heartests.verbaltests.viewpager.VP_FG_Activity" />
+        <activity android:name=".heartests.hearing_aid.HearingAidActivity" />
+        <activity
+            android:name=".history.PureTestHistoryListActivity"
+            android:theme="@style/activityTheme" />
+        <activity android:name=".DisclaimerStatementActivity" />
+        <activity android:name=".TermsOfService" />
+
+        <service
+            android:name=".heartests.verbaltests.services.WhiteNoiseService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="seeingvoice.WhiteNoiseService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="seeingvoice.WXEntryActivity" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".history.HistroryActivity"
+            android:theme="@style/activityTheme" />
+        <activity
+            android:name=".history.HistoryItemDetail"
+            android:theme="@style/activityTheme" />
+        <activity
+            android:name=".smsverify.SmsVerifyActivity"
+            android:theme="@style/activityTheme" />
+        <activity
+            android:name=".AboutUsActivity"
+            android:theme="@style/activityTheme" />
+        <activity android:name=".heartests.hearAgeTest.hearAgeTestActivity" />
+        <activity
+            android:name=".heartests.hearAgeTest.ExamActivity"
+            android:theme="@style/activityTheme" /> <!-- <activity -->
+        <!-- android:name=".messagepush.MipushTestActivity" -->
+        <!-- android:exported="true" -->
+        <!-- android:launchMode="singleTask" /> -->
+        <activity android:name=".login.GiveFeedbackActivity" />
+        <activity android:name=".bluetooth.connBlueActivity" />
+        <activity
+            android:name=".login.FindBackPwdActivity"
+            android:theme="@style/activityTheme" />
+        <activity
+            android:name=".login.UpdatePwdActivity"
+            android:theme="@style/activityTheme" />
+        <activity
+            android:name=".heartests.hearAgeTest.hearAgeResultExplain"
+            android:theme="@style/activityTheme" />
+        <activity android:name=".heartests.openslmediaplayer.test.activities.ActivityChangeVolume"
+            android:theme="@style/TransparentTheme"/>
+        <!-- <meta-data -->
+        <!-- android:name="com.huawei.hms.client.appid" -->
+        <!-- android:value="100954583" /> &lt;!&ndash; 华为ID &ndash;&gt; -->
+        <!-- &lt;!&ndash; 友盟的key和secret &ndash;&gt; -->
+        <!-- <meta-data -->
+        <!-- android:name="UMENG_APPKEY" -->
+        <!-- android:value="5d316eee0cafb228e4000dd8" /> -->
+        <!-- <meta-data -->
+        <!-- android:name="Umeng Message Secret" -->
+        <!-- android:value="5cd501431b80f1ce9127e0b159d75a15" /> &lt;!&ndash; VIVO id key &ndash;&gt; -->
+        <!-- <meta-data -->
+        <!-- android:name="com.vivo.push.api_key" -->
+        <!-- android:value="54a9e68d-314d-48eb-90b1-a22073061c67" /> -->
+        <!-- <meta-data -->
+        <!-- android:name="com.vivo.push.app_id" -->
+        <!-- android:value="13877" /> -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.seeingvoice.www.com.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider> <!-- <activity -->
+        <!-- android:name=".heartests.musicPlayer.MusicPlayActivity" -->
+        <!-- android:exported="true" -->
+        <!-- android:launchMode="singleTask" /> -->
+        <!-- <activity android:name=".heartests.musicPlayer.MusicSetting" /> -->
+        <!-- <service android:name=".heartests.musicPlayer.MusicPlayerService" /> -->
+        <!-- <activity -->
+        <!-- android:name=".heartests.openslmediaplayer.MusicPlayActivity" -->
+        <!-- android:exported="true" -->
+        <!-- android:launchMode="singleTask" /> -->
+        <activity android:name=".heartests.openslmediaplayer.MusicListActivity" />
+        <activity android:name=".heartests.openslmediaplayer.SetupMusicHearAssistActivity" />
+
+        <service android:name=".heartests.openslmediaplayer.test.service.MusicService" />
+    </application>
+
+</manifest>

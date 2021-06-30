@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/email_login_form"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_state_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tel_number"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:counterEnabled="true"
+        app:counterMaxLength="11">
+
+        <EditText
+            android:id="@+id/ed_phone_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入手机号码"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/ed_verify_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入验证码"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/btn_verify_phone"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="验证手机号"
+        android:textColor="@drawable/btn_color_selector"
+        android:background="@drawable/btn_circle_corner_selector"
+        android:textSize="18sp"
+        android:clickable="false"
+        android:enabled="false"/>
+    <!--<Button-->
+        <!--android:id="@+id/btn_verify_code"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="48dp"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:textAlignment="center"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:text="获得验证码"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="18sp"-->
+        <!--android:background="@drawable/shape_conner"/>-->
+
+    <Button
+        android:id="@+id/btn_SetNewPwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="验证"
+        android:background="@drawable/btn_circle_corner_selector"
+        android:textColor="@drawable/btn_color_selector"
+        android:textSize="18sp"
+        android:clickable="false"
+        android:enabled="false"/>
+</LinearLayout>

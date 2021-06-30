@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="feedback_type">
+        <item>请选意见类型</item>
+        <item>UI界面需要改善</item>
+        <item>纯音测试 </item>
+        <item>言语测试</item>
+        <item>年龄测试</item>
+        <item>噪音检测</item>
+        <item>其他问题</item>
+    </string-array>
+    <string-array name="entries_list_preference">
+        <item>北京</item>
+        <item>上海</item>
+        <item>宁波 </item>
+        <item>广州</item>
+        <item>深圳</item>
+    </string-array>
+    <string-array name="entryvalues_list_preference">
+        <item>土豆</item>
+        <item>地瓜</item>
+        <item>山药蛋 </item>
+    </string-array>
+    <!-- Reply Preference -->
+    <string-array name="reply_entries">
+        <item>Reply</item>
+        <item>Reply to all</item>
+    </string-array>
+
+    <string-array name="reply_values">
+        <item>reply</item>
+        <item>reply_all</item>
+    </string-array>
+</resources>

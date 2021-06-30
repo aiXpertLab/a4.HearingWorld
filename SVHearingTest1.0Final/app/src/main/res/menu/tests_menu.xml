@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".TestsActivity">
+    <item
+        android:id="@+id/menu1"
+        android:icon="@mipmap/history_icon"
+        android:title="历史记录"
+        app:showAsAction="withText|ifRoom"/>
+</menu>
