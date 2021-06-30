@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/titlebar_container"
+        layout="@layout/common_titlebar"/>
+
+    <EditText
+        style="?android:attr/textViewStyle"
+        android:id="@+id/feedback_et"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/titlebar_container"
+        android:layout_marginLeft="@dimen/activity_horizon_margin"
+        android:layout_marginRight="@dimen/activity_horizon_margin"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_btn_circle_corner_gray"
+        android:gravity="fill_horizontal"
+        android:hint="请输入您的反馈意见..."
+        android:padding="11dp"
+        android:textColorHint="#999999"
+        android:singleLine="false"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        />
+
+    <LinearLayout
+        android:id="@+id/phone_container_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_profile_item_height"
+        android:layout_below="@id/feedback_et"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="@dimen/activity_horizon_margin"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="@dimen/feedback_item_title_width"
+            android:layout_height="wrap_content"
+            android:text="手机号"
+            android:textSize="14sp"
+            android:textColor="#666666" />
+
+        <EditText
+            style="?android:attr/textViewStyle"
+            android:id="@+id/phone_et"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:hint="（选填）"
+            android:background="#ffffff"
+            android:textColor="#999999"
+            android:textSize="14sp"
+            android:padding="11dp"/>
+    </LinearLayout>
+
+    <View xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/phone_container_ll"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/gray_light">
+
+    </View>
+    <LinearLayout
+        android:id="@+id/email_container_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_profile_item_height"
+        android:layout_below="@id/divider1"
+        android:layout_marginLeft="@dimen/activity_horizon_margin"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="@dimen/feedback_item_title_width"
+            android:layout_height="wrap_content"
+            android:text="邮箱"
+            android:textSize="14sp"
+            android:textColor="#666666" />
+
+        <EditText
+            style="?android:attr/textViewStyle"
+            android:id="@+id/email_et"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:hint="（选填）"
+            android:background="#ffffff"
+            android:textColor="#999999"
+            android:textSize="14sp"
+            android:padding="11dp"/>
+    </LinearLayout>
+
+    <View xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/email_container_ll"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/gray_light">
+
+    </View>
+
+    <LinearLayout
+        android:id="@+id/qq_container_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_profile_item_height"
+        android:layout_below="@id/divider2"
+        android:layout_marginLeft="@dimen/activity_horizon_margin"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="@dimen/feedback_item_title_width"
+            android:layout_height="wrap_content"
+            android:text="QQ"
+            android:textSize="14sp"
+            android:textColor="#666666" />
+
+        <EditText
+            style="?android:attr/textViewStyle"
+            android:id="@+id/qq_et"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:hint="（选填）"
+            android:background="#ffffff"
+            android:textColor="#999999"
+            android:textSize="14sp"
+            android:padding="11dp"/>
+    </LinearLayout>
+
+    <View xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/qq_container_ll"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/gray_light"/>
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/shape_blue_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="提交"
+        android:textSize="18sp"
+        android:textColor="@color/white"/>
+</RelativeLayout>

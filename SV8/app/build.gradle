@@ -1,0 +1,97 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'com.android.library'
+//apply plugin: 'com.jakewharton.butterknife'
+android {
+    compileSdkVersion 30
+    buildToolsVersion '30.0.3'
+//    signingConfigs {
+  //      myconfig {
+    //        keyAlias 'eyeglasses1.5'
+      //      keyPassword 'jskj123456'
+        //    storeFile file('G:/jskj.eyeglasses1.5.jks')
+          //  storePassword 'jskj123456'
+  //      }
+    //}
+    defaultConfig {
+        applicationId "com.hypech.SV8"
+        multiDexEnabled true
+        minSdkVersion 24
+        targetSdkVersion 30
+        versionCode 3
+        versionName "3.0.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            lintOptions {
+                checkReleaseBuilds false
+                abortOnError false
+            }
+
+        }
+ //       release {
+   //         signingConfig  signingConfigs.myconfig
+     //       minifyEnabled true
+       //     proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+         //   lintOptions {
+           //     checkReleaseBuilds false
+             //   abortOnError false
+            //}
+
+        //}
+
+    }
+    // Butterknife requires Java 8.
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.android.material:material:1.2.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //https://github.com/YoKeyword/Fragmentation/  fragment manager
+    implementation 'me.yokeyword:fragmentation:1.3.8'
+    implementation 'me.yokeyword:fragmentation-swipeback:1.3.8'
+    // Activity作用域的EventBus，更安全，可有效避免after onSavenInstanceState()异常
+    implementation 'me.yokeyword:eventbus-activity-scope:1.1.0'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+
+    //multidex
+    implementation 'androidx.multidex:multidex:2.0.1'
+    //升级加载动画库
+    implementation project(':shapeloading')
+    implementation project(':library')
+    //网络请求
+    //必须使用
+    implementation 'com.lzy.net:okgo:3.0.4'
+    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'com.readystatesoftware.chuck:library:1.0.4'
+    //百度统计
+    compile files('libs/Baidu_Mtj_android_3.9.5.8.jar')
+    //Spp连接三方库
+    implementation project(':btutil')
+    //butterknife 注解
+//    implementation 'com.jakewharton:butterknife:10.2.0'
+//    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.0'
+    //扫描类库
+//    implementation project(':zxing-android-embedded')
+    implementation('com.journeyapps:zxing-android-embedded:3.6.0') { transitive = false }
+    implementation 'com.google.zxing:core:3.3.0'
+    //圆形头像
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
+    //引导页
+    implementation project(':guide_lib')
+    //agentweb webview
+    implementation 'com.just.agentweb:agentweb:4.1.2'
+    implementation 'com.lcodecorex:tkrefreshlayout:1.0.7'
+}

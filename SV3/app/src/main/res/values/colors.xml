@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3fbded</color>
+    <color name="colorPrimaryDark">#3fbdef</color>
+    <color name="colorAccent">#3fbded</color>
+    <color name="color_common_blue">#3fbded</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray_text">#9b9b9b</color>
+    <color name="harftransparent">#80000000</color>
+    <color name="Title_color">#333333</color>
+    <color name="tab_unselect">#c9c9c9</color>
+    <color name="bg_btn">#dadada</color>
+    <color name="bg_app">#FFFFFF</color>
+    <color name="home_middle_text_color">#333333</color>
+    <color name="battery_circle_color">#999999</color>
+    <color name="gray_light">#e8e8e8</color>
+
+    <color name="gray_my_profile">#666666</color>
+    <color name="divider_my_profile">#f5f5f5</color>
+    <color name="black">#000000</color>
+
+    <color name="login_register_gray">#cccccc</color>
+</resources>
